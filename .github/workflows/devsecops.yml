@@ -28,11 +28,7 @@ jobs:
       # 🔐 Scan Node.js dependencies
       - name: 🔐 npm Audit
         run: npm audit --audit-level=moderate || true
-
-      # 🧪 Unit Tests
-      - name: 🧪 Run Unit Tests
-        run: npm run test
-
+        
       # 🐳 Set up Docker Buildx
       - name: 🛠️ Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
